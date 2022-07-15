@@ -1,12 +1,12 @@
+import Script from 'next/script'
+
 export default {
-  github: 'https://github.com/shuding/nextra',
-  docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master',
-  titleSuffix: ' – Nextra',
+  titleSuffix: ' – Krinu',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <span className="mr-2 font-extrabold hidden md:inline">Krinu</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next.js Static Site Generator
+        Documentation
       </span>
     </>
   ),
@@ -61,7 +61,7 @@ export default {
   prevLinks: true,
   nextLinks: true,
   footer: true,
-  footerEditLink: 'Edit this page on GitHub',
-  footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
+  // footerEditLink: 'Edit this page on GitHub',
+  footerText: <Script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25562069.js"></Script>,
   unstable_faviconGlyph: '👋',
 }

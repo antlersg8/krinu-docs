@@ -1,95 +1,65 @@
 # Get Started
 
-## Quick Start with Vercel
+## Sign In With Your CRM
 
-You can start by creating your own Nextra site and deploying to Vercel by clicking the link:
+On the login page, pick your CRM to sign in with
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?demo-description=Markdown%20powered%20docs%20site.%20Built%20with%20Next.js.&demo-image=https%3A%2F%2Fnextra.vercel.app%2Fdemo.png&demo-title=Documentation%20Starter%20Kit&demo-url=https%3A%2F%2Fnextra.vercel.app%2F&project-name=nextjs-docs&repository-name=nextjs-docs&s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra&from=templates)
+![Sign In](../public/screenshots/gettingstarted-0.png)
 
-Vercel will create the Nextra repository and deploy the site for you with just a few clicks.  
-Once done, every change in the repository will be deployed automatically.
+Once you have granted access, our app will pull and sync the following data:
+1. Accounts, contacts, and opportunities 
+2. That are owned by you into our system
+3. And, have been created/modified in the last 30 days
+To request more data to be synced, please contact support [here](/).
 
-## Create Manually
+## Connect Your Messaging App
 
-Nextra works like a Next.js plugin, and it accepts a theme config (layout) to render the page. To start:
+1. Click on your profile and click on "Integrations"
 
-1. Install Next.js, Nextra and React: `yarn add next nextra react react-dom`
+![Select Integrations](../public/screenshots/gettingstarted-1.png)
 
-2. Install the docs theme (you can use any theme you like): `yarn add nextra-theme-docs`
+2. Click "Connect" on a messaging app
 
-3. Create the following Next.js config:
+![Connect Messaging App](../public/screenshots/gettingstarted-2.png)
 
-```jsx
-// next.config.js
-const withNextra = require('nextra')({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.js',
-  // optional: add `unstable_staticImage: true` to enable Nextra's auto image import
-})
-module.exports = withNextra()
-```
+3. Open your messaging app and scan the QR code
 
-4. Create a `theme.config.js` file for the docs theme:
+![Scan QR Code](../public/screenshots/gettingstarted-3.png)
 
-```jsx
-// theme.config.js
-export default {
-  projectLink: 'https://github.com/shuding/nextra', // GitHub link in the navbar
-  docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master', // base URL for the docs repository
-  titleSuffix: ' – Nextra',
-  nextLinks: true,
-  prevLinks: true,
-  search: true,
-  customSearch: null, // customizable, you can use algolia for example
-  darkMode: true,
-  footer: true,
-  footerText: `MIT ${new Date().getFullYear()} © Shu Ding.`,
-  footerEditLink: `Edit this page on GitHub`,
-  logo: (
-    <>
-      <svg>...</svg>
-      <span>Next.js Static Site Generator</span>
-    </>
-  ),
-  head: (
-    <>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="Nextra: the next docs builder" />
-      <meta name="og:title" content="Nextra: the next docs builder" />
-    </>
-  ),
-}
-```
+4. To disconnect your messaging app, click on the red exit button
 
-import Callout from 'nextra-theme-docs/callout'
+![Disconnect App](../public/screenshots/gettingstarted-4.png)
 
-<Callout>
-  More configuration options for the docs theme can be found
-  [here](/themes/docs/configuration).
-</Callout>
+**Notes**: 
+- Messages that you send on Krinu while disconnected will be queued for send. They will be sent immediately after reconnecting.
+- Disconnecting your app does not delete your messaging data from our servers. To request full data deletion, please contact support [here](/).
 
-5. Create `pages/_app.js` and include the theme stylesheet:
+## Select Your CRM Opportunities
 
-```jsx
-import 'nextra-theme-docs/style.css'
+TBD - blocked by Adrien's update
 
-export default function Nextra({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
-```
+## Select Your Chats
 
-6. You are good to go! Run `yarn next` to start.
+Click on the pink plus button and it will popup a list of chats
 
----
+![Add Chat](../public/screenshots/selectchat-1.png)
 
-<span id="sidebar-and-anchor-links" />
-<Callout>
-  Any `.md` or `.mdx` file will turn into a doc page and be displayed in
-  sidebar. You can also create a `meta.json` file to customize the page order
-  and title. <br /> Check the source code: https://github.com/shuding/nextra for
-  more information.
-</Callout>
+### Add existing chats
 
-<Callout>
-You can also use [`<style jsx>`](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) to style elements inside `theme.config.js`.
-</Callout>
+The popup lists chats that already exist on your phone. Select them to attach them to the opportunity. Deselect them to remove them from the opportunity.
+
+**Note**: Only attached chats will be synced to your CRM.
+
+![Add Existing Chat](../public/screenshots/selectchat-2.png)
+
+### Start new direct chat
+
+Click on `New Direct` to start a new direct chat with a contact. 
+
+**Note**: Only contacts associated with the CRM opportunity can be added.
+
+![New Direct Chat](../public/screenshots/selectchat-3.png)
+
+### Start new group chat
+
+TBD - Blocked by Adrien
