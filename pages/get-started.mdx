@@ -9,14 +9,14 @@ On the login page, pick your CRM to sign in with
 ![Sign In](../public/screenshots/gettingstarted-0.png)
 
 Once you have granted access, our app will pull and sync the following data:
-1. Accounts, contacts, and opportunities 
+1. Accounts, contacts, and open opportunities 
 2. That are owned by you into our system
 3. And, have been created/modified in the last 30 days
 To request more data to be synced, please contact support [here](/).
 
 ## Connect Your Messaging App
 
-1. Click on your profile and click on "Integrations"
+1. Click on the Integration icon on the left sidebar
 
 ![Select Integrations](../public/screenshots/gettingstarted-1.png)
 
@@ -36,23 +36,29 @@ To request more data to be synced, please contact support [here](/).
 - Messages that you send on Krinu while disconnected will be queued for send. They will be sent immediately after reconnecting.
 - Disconnecting your app does not delete your messaging data from our servers. To request full data deletion, please contact support [here](/).
 
-## Select Your CRM Opportunities
+## Create Channels
 
-Messaging chats in Krinu are organized around opportunities (also known as Deals in Hubspot)
+Messaging chats in Krinu are organized around channels. 
 
-To select opportunities, first click on Chat, followed by the opportunity in the list.
+Currently, channels can be created from Hubspot Deals/Salesforce Opportunities. In the future, channels can be created from Companies/Accounts. 
 
-<Image src="/screenshots/select-opp-1.png" alt="Select Opps" width={346} height={449}/>
+To select a Hubspot Deal/Salesforce Opportunity, first click on the Add button, and click on `New Channel`
 
-## Select Your Chats
+<Image src="/screenshots/add-channel-1.png" alt="Select Channel" width={554} height={330}/>
 
-Click on the pink plus button and it will popup a list of chats
+Select a deal/opportunity and click Save.
+
+![Select Channel](../public/screenshots/add-channel-2.png)
+
+## Add Chats to A Channel
+
+Select a channel and click on the Add button. It will now let you add an existing chat or create a new chat.
 
 ![Add Chat](../public/screenshots/selectchat-1.png)
 
 ### Add existing chats
 
-The popup lists chats that already exist on your phone. Select them to attach them to the opportunity. Deselect them to remove them from the opportunity.
+Clicking `Select Chats` will list chats that already exist on your phone. Select them to attach them to the channel. Deselect them to remove them from the channel.
 
 **Note**: Only attached chats will be synced to your CRM.
 
@@ -60,8 +66,8 @@ The popup lists chats that already exist on your phone. Select them to attach th
 
 ### Start new direct chat
 
-Click on `New Direct` to start a new direct chat with a contact. 
+Clicking on `New Chat` will list contacts you can start a new chat with.
 
-**Note**: Only contacts associated with the CRM opportunity can be added.
+**Note**: Only contacts associated with the channel's CRM opportunity/deal can be added.
 
 ![New Direct Chat](../public/screenshots/selectchat-3.png)
