@@ -1,4 +1,5 @@
 {
 	"timeline": "Logging Messages",
-	"attachment": "Logging Attachments"
+	"attachment": "Logging Attachments",
+	"autologging": "Auto Message Logging"
 }
